@@ -24,6 +24,17 @@ int print_str(va_list arguments, char *buf, unsigned int ibuf);
 int print_prg(va_list __attribute__((unused)), char *, unsigned int);
 int print_int(va_list arguments, char *buf, unsigned int ibuf);
 
+int prinlhex(va_list arguments, char *buf, unsigned int ibuf);
+int prinlint(va_list arguments, char *buf, unsigned int ibuf);
+int prinloct(va_list arguments, char *buf, unsigned int ibuf);
+int prinlunt(va_list arguments, char *buf, unsigned int ibuf);
+
+int print_oct(va_list arguments, char *buf, unsigned int ibuf);
+int prinpint(va_list arguments, char *buf, unsigned int ibuf);
+int print_rev(va_list arguments, char *buf, unsigned int ibuf);
+int prinhunt(va_list arguments, char *buf, unsigned int ibuf);
+int prinhupx(va_list arguments, char *buf, unsigned int ibuf);
+int prinsint(va_list arguments, char *buf, unsigned int ibuf);
 int prinhunt(va_list arguments, char *buf, unsigned int ibuf);
 int(*get_print_func(const char *s, int index))(va_list, char *, unsigned int);
 int ev_print_func(const char *s, int index);
