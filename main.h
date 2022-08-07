@@ -24,10 +24,17 @@ int print_str(va_list arguments, char *buf, unsigned int ibuf);
 int print_prg(va_list __attribute__((unused)), char *, unsigned int);
 int print_int(va_list arguments, char *buf, unsigned int ibuf);
 
+char *fill_short_oct_array(char *bnr, char *oct);
+char *fill_oct_array(char *bnr, char *oct);
+char *fill_long_oct_array(char *bnr, char *oct);
+char *fill_hex_array(char *bnr, char *hex, int isupp, int limit);
+char *fill_binary_array(char *binary, long int int_in, int isneg, int limit);
+
 int prinlhex(va_list arguments, char *buf, unsigned int ibuf);
 int prinlint(va_list arguments, char *buf, unsigned int ibuf);
 int prinloct(va_list arguments, char *buf, unsigned int ibuf);
 int prinlunt(va_list arguments, char *buf, unsigned int ibuf);
+int prinlupx(va_list arguments, char *buf, unsigned int ibuf);
 
 int print_oct(va_list arguments, char *buf, unsigned int ibuf);
 int prinpint(va_list arguments, char *buf, unsigned int ibuf);
