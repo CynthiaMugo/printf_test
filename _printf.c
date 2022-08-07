@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print -> formatted output conversion and print data
+ * _printf -> formatted output conversion and print data
  * @format: input string
  * Return: no of chars printed
  */
@@ -38,9 +38,9 @@ int _printf(const char *format, ...)
 				else
 				{
 					len += function(arguments, buffer, ibuf);
-					i += ev_print_func(format, i +1);
+					i += ev_print_func(format, i + 1);
 				}
-			}i++;
+			} i++;
 		}
 		else
 			handl_buf(buffer, format[i], ibuf), len++;
