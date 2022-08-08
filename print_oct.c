@@ -16,7 +16,7 @@ int print_oct(va_list arguments, char *buf, unsigned int ibuf)
 	isnegative = 0;
 	if (int_input == 0)
 	{
-		ibuf = hand1_buf(buf, '0', ibuf);
+		ibuf = handl_buf(buf, '0', ibuf);
 		return (1);
 	}
 	if (int_input < 0)
@@ -43,8 +43,4 @@ int print_oct(va_list arguments, char *buf, unsigned int ibuf)
 	free(binary);
 	free(octal);
 	return (count);
-
-		free(binary);
-		free(octal);
-		return (count);
 }
