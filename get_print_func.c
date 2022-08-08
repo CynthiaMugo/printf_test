@@ -20,7 +20,7 @@ int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 		{"lo", prinloct}, {"lx", prinlhex},
 		{"lX", prinlupx}, {"hi", prinhint},
 		{"hd", prinhint}, {"hu", prinhunt},
-		{"ho", prinhoct}, {"hx", prinhex},
+		{"ho", prinhoct}, {"hx", prinhhex},
 		{"hX", prinhupx}, {"#o", prinnoct},
 		{"#x", prinnhex}, {"#X", prinnupx},
 		{"#i", print_int}, {"#X", prinnupx},
