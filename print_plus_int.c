@@ -9,7 +9,7 @@
  */
 int prinpint(va_list arguments, char *buf, unsigned int ibuf)
 {
-	int int_nput;
+	int int_input;
 	unsigned int int_in, int_temp, i, div;
 
 	int_input = va_arg(arguments, int);

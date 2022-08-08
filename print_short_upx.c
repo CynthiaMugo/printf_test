@@ -37,7 +37,7 @@ int prinhupx(va_list arguments, char *buf, unsigned int ibuf)
 			first_digit = 1;
 		if (first_digit)
 		{
-			ibuf = hand1_buf(buf, hexadecimal[i], ibuf);
+			ibuf = handl_buf(buf, hexadecimal[i], ibuf);
 			count++;
 		}
 	}

@@ -12,7 +12,7 @@ int prinhoct(va_list arguments, char *buf, unsigned int ibuf)
 	short int int_input, i, isnegative, count, first_digit;
 	char *octal, *binary;
 
-	int_input = va_arg(arguements, int);
+	int_input = va_arg(arguments, int);
 	isnegative = 0;
 	if (int_input == 0)
 	{

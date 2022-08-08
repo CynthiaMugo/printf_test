@@ -34,7 +34,7 @@ int print_upx(va_list arguments, char *buf, unsigned int ibuf)
 			first_digit = 1;
 		if (first_digit)
 		{
-			ibuf = handl_buf(buf, hexadeciaml[i], ibuf);
+			ibuf = handl_buf(buf, hexadecimal[i], ibuf);
 			count++;
 		}
 	}
