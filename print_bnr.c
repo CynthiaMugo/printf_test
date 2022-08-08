@@ -7,7 +7,7 @@
  * @ibuf: index for buffer pointer
  * Return: no of chars printed
  */
-int print_bnr(va_list arguments, char *buf, unsignedint ibuf)
+int print_bnr(va_list arguments, char *buf, unsigned int ibuf)
 {
 	int int_input, count, i, first_one, isnegative;
 	char *binary;

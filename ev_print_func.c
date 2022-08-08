@@ -25,10 +25,10 @@ int ev_print_func(const char *s, int index)
 		{" x", print_hex}, {" X", print_upx}, {" i", prinsint},
 		{"r", print_rev}, {"%", print_prg}, {"l", print_prg},
 		{"h", print_prg}, {" +i", prinpint}, {" +d", prinpint},
-		{"+ i", prinpint}, {"+ d", prinpint}, {" %", prin_prg},
+		{"+ i", prinpint}, {"+ d", prinpint}, {" %", print_prg},
 		{NULL, NULL},
 	};
-	int i = 0,  int j = 0, first_index;
+	int i = 0, j = 0, first_index;
 
 	first_index = index;
 	while (pr[i]. type_arg)

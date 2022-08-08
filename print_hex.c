@@ -24,7 +24,7 @@ int print_hex(va_list arguments, char *buf, unsigned int ibuf)
 		int_input = (int_input * -1) - 1;
 		isnegative = 1;
 	}
-	binary = malloc(sizeof(char)) * (32 + 1);
+	binary = malloc(sizeof(char) * (32 + 1));
 	binary = fill_binary_array(binary, int_input, isnegative, 32);
 	hexadecimal = malloc(sizeof(char) * (8 + 1));
 	hexadecimal = fill_hex_array(binary, hexadecimal, 0, 8);

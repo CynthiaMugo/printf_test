@@ -51,12 +51,3 @@ int _printf(const char *format, ...)
 	return (len);
 }
 
-int main(void)
-{
-	int len;
-
-	len = _printf("Print a simple sentence. \n");
-	_printf("Character: [%c]\n", 'H');
-	len = _printf("Percent: [%%]\n");
-	return (0);
-}

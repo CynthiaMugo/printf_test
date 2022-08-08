@@ -39,7 +39,12 @@ int print_oct(va_list arguments, char *buf, unsigned int ibuf)
 			count++;
 		}
 	}
+
 	free(binary);
 	free(octal);
 	return (count);
+
+		free(binary);
+		free(octal);
+		return (count);
 }
