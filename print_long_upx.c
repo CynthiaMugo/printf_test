@@ -9,7 +9,7 @@
  */
 int prinlupx(va_list arguments, char *buf, unsigned int ibuf)
 {
-	long int int_input, i, isnegativee, count, first_digit;
+	long int int_input, i, isnegative, count, first_digit;
 	char *hexadecimal, *binary;
 
 	int_input = va_arg(arguments, long int);

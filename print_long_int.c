@@ -10,7 +10,7 @@
 
 int prinlint(va_list arguments, char *buf, unsigned int ibuf)
 {
-	lont int int_input;
+	long int int_input;
 	unsigned long int int_in, int_temp, i, div, isneg;
 
 	int_input = va_arg(arguments, long int);
@@ -29,7 +29,7 @@ int prinlint(va_list arguments, char *buf, unsigned int ibuf)
 	int_temp = int_in;
 	div = 1;
 
-	while (int_emp > 9)
+	while (int_temp > 9)
 	{
 		div *= 10;
 		int_temp /= 10;
