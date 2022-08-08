@@ -13,9 +13,6 @@ int prinlhex(va_list arguments, char *buf, unsigned int ibuf)
 	char *hexadecimal, *binary;
 
 	int_input = va_arg(arguments, long int);
-	char *hexadecimal, *binary;
-
-	int_input = va_arg(arguments, long int);
 	isnegative = 0;
 	if (int_input == 0)
 	{
